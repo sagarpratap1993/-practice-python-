@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+<title>CRUD | add</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid w-100 my-3">
+    <div class="w-100 m-auto mid-section ">
+        <h5 class="text-center bg-dark text-light  p-2" > <span
+                style="color: #2a8327; border-bottom: 5px solid #d13f8d ">Create</span> employee Record</h5>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="full name :" class="form-control">
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>phone</label>
+                    <input type="text" name="phone" placeholder="phone number" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Designation</label>
+                    <input type="text" name="dgs" placeholder="Designation" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>salary</label>
+                    <input type="number" name="salary" placeholder="salary" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>email</label>
+                    <input type="text" name="email" placeholder="email" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>State</label>
+                    <input type="text" name="state" placeholder="State" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>city</label>
+                    <input type="text" name="city" placeholder="city" class="form-control">
+                </div>
+
+            </div>
+            <div class="my-3">
+                <button type="submit" class="btn btn-success  w-100">submit</button>
+
+            </div>
+        </form>
+
+
+    </div>
+
+</div>
+{% endblock %}

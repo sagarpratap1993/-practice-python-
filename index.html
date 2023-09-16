@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+              <form onsubmit="getAPIData();return false">
+                <input type="search" id="search" placeholder="Enter country name">
+                <button type="submit">search</button>
+
+              </form>
+
+        </div>
+        <div class="second">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td id="name"></td>
+                </tr>
+
+                <tr>
+                    <th>Capital</th>
+                    <td id="capital"></td>
+                </tr>
+
+                <tr>
+                    <th>Flag</th>
+                    <td><img id="flags" alt=""></td>
+                </tr>
+
+                <tr>
+                    <th>region</th>
+                    <td id="region"></td>
+                </tr>
+
+                <tr>
+                    <th>sub Region</th>
+                    <td id="subregion"></td>
+                </tr>
+
+                <tr>
+                    <th>Continents</th>
+                    <td id="continents"></td>
+                </tr>
+
+                <tr>
+                    <th>Population</th>
+                    <td id="Population"></td>
+                </tr>
+
+                <tr>
+                    <th>Area</th>
+                    <td id="Area"></td>
+                </tr>
+
+                <tr>
+                    <th>Border</th>
+                    <td id="Border"></td>
+                </tr>
+
+                <tr>
+                    <th>Timezones</th>
+                    <td id="TimeZones"></td>
+                </tr>
+
+                <tr>
+                    <th>Independent</th>
+                    <td id="Independent"></td>
+                </tr>
+
+                <tr>
+                    <th>UnMember</th>
+                    <td id="UnMember"></td>
+                </tr>
+
+                <tr>
+                    <th>Landlocked</th>
+                    <td id="Landlocked"></td>
+                </tr>
+
+                <tr>
+                    <th>Maps</th>
+                    <td><a id="maps" target="_blank">View Map</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
